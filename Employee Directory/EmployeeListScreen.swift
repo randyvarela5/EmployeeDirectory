@@ -42,6 +42,7 @@ class EmployeeListScreen: UIViewController {
                 }
             }
         }.resume()
+        tableView.rowHeight = 150
     }
         
     }
@@ -65,7 +66,7 @@ extension EmployeeListScreen: UITableViewDataSource, UITableViewDelegate {
         cell.employeeName.text = employees[indexPath.row].fullName
         //cell.employeeImage.image = employees[indexPath.row].photoURLSmall
         cell.employeeTeam.text = employees[indexPath.row].team
-        self.tableView.rowHeight = 150;
+        
         
         let completeLink = employees[indexPath.row].photoURLSmall
         cell.imageView!.downloaded(from: completeLink)
@@ -97,10 +98,10 @@ extension UIImageView {
     
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFill) {
         contentMode = mode
-//        if let imageData = ImageCache.shared.images[url.absoluteString], let image = UIImage(data: imageData) {
-//            print("Using Cached images")
-//            self.image = image
-//        } else {
+        if let imageData = ImageCache.shared.images[url.absoluteString], let image = UIImage(data: imageData) {
+            print("Using Cached images")
+            self.image = image
+        } else {
             URLSession.shared.dataTask(with: url) { data, response, error in
                 guard
                     let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
@@ -108,7 +109,7 @@ extension UIImageView {
                     let data = data, error == nil,
                     let image = UIImage(data: data)
                 else { return }
-                //ImageCache.shared.images[url.absoluteString] = data
+                ImageCache.shared.images[url.absoluteString] = data
                 DispatchQueue.main.async() { [weak self] in
                     
                     self?.image = image
@@ -116,5 +117,5 @@ extension UIImageView {
             }.resume()
         }
     }
-
+}
 

@@ -15,6 +15,7 @@
 		E27E0CC327C179F800E2EA91 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27E0CC227C179F800E2EA91 /* EmployeeCell.swift */; };
 		E27E0CC527C17B4F00E2EA91 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27E0CC427C17B4F00E2EA91 /* Employee.swift */; };
 		E27E0CC727C17EAD00E2EA91 /* EmployeeListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27E0CC627C17EAD00E2EA91 /* EmployeeListScreen.swift */; };
+		E29CB9D827F6680B005F5CCB /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CB9D727F6680B005F5CCB /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E27E0CC227C179F800E2EA91 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
 		E27E0CC427C17B4F00E2EA91 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		E27E0CC627C17EAD00E2EA91 /* EmployeeListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListScreen.swift; sourceTree = "<group>"; };
+		E29CB9D727F6680B005F5CCB /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E27E0CC427C17B4F00E2EA91 /* Employee.swift */,
 				E27E0CC227C179F800E2EA91 /* EmployeeCell.swift */,
 				E27E0CC627C17EAD00E2EA91 /* EmployeeListScreen.swift */,
+				E29CB9D727F6680B005F5CCB /* ImageCache.swift */,
 				E27E0CB527C16F9200E2EA91 /* Assets.xcassets */,
 				E27E0CB727C16F9200E2EA91 /* LaunchScreen.storyboard */,
 				E27E0CBA27C16F9200E2EA91 /* Info.plist */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29CB9D827F6680B005F5CCB /* ImageCache.swift in Sources */,
 				E27E0CAD27C16F9000E2EA91 /* AppDelegate.swift in Sources */,
 				E27E0CC327C179F800E2EA91 /* EmployeeCell.swift in Sources */,
 				E27E0CC527C17B4F00E2EA91 /* Employee.swift in Sources */,
