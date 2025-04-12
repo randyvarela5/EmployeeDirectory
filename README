@@ -1,0 +1,26 @@
+## Build tools & versions used
+Xcode 13.0
+
+## Steps to run the app
+Running app from Xcode
+
+## What areas of the app did you focus on?
+I focused a lot on the constraints, specfically around the cell and UIImage
+
+## What was the reason for your focus? What problems were you trying to solve?
+The reason for my focus in these areas was because I used storyboard to apply all my constraints to all elements on the view and even though I had no warnings, the cell would be very small when the app built. after troubleshooting, I landed on a solution where I had to explicitly call out the size (line 45). Im not entirely sure why this line is need to be honest. Some of the things I tried were rebuilding it using only a colored view as the image and it resulted in the same behavior
+
+## How long did you spend on this project?
+Given my current demanding job, its hard to say. I had several short sessions until I completed it.  There were a couple long stretches. Maybe about 16-20 hours
+
+## Did you make any trade-offs for this project? What would you have done differently with more time?
+Focused on more on testing, take advantage of the known-bad endpoints.
+
+## What do you think is the weakest part of your project?
+The design maybe?  I wanted to add more attributes from the api but decided to go for simplicity by only including Name, and team.
+
+## Did you copy any code or dependencies? Please make sure to attribute them here!
+Yes. From other projects. The JSON parser, the UIIMage extention, and I also used https://app.quicktype.io/ top create my struct.
+
+## Is there any other information you’d like us to know?
+Im a self taught engineer whos eager to learn. I pride myself on being coachable and being receptive to feedback. My current role is as a Native mobile build engineer where we have a white label app. I manage all of iOS and android (~200 clients = 400 apps in app and play store). I manage all the code signings and anything store related. I maintain the on-prem mac minis. Im also embedded in out native mobile team (iOS and android) where I occasionally help out with some tickets (String changes, sdk changes, skinning our app, cutting and tagging releases, anywhere where I can help)  Thank you for your time and consideration!
